@@ -74,6 +74,24 @@
 
         .footer{padding:48px 0 32px;border-top:1px solid var(--border)}.footer-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}.footer-links{display:flex;gap:24px;list-style:none;flex-wrap:wrap}.footer-links a{font-size:.82rem;color:var(--text-muted);text-decoration:none;transition:color .2s}.footer-links a:hover{color:var(--amber)}.footer-copy{font-size:.8rem;color:var(--text-muted)}
 
+        /* EMAIL MODAL */
+        .modal-overlay{display:none;position:fixed;inset:0;background:rgba(15,26,48,.7);backdrop-filter:blur(6px);z-index:2000;align-items:center;justify-content:center;padding:24px}.modal-overlay.open{display:flex}
+        .modal{background:var(--bg-card);border-radius:var(--radius);padding:44px 40px;max-width:460px;width:100%;position:relative;box-shadow:var(--shadow-lg);animation:fadeUp .3s ease}
+        .modal-close{position:absolute;top:16px;right:18px;background:none;border:none;font-size:1.3rem;cursor:pointer;color:var(--text-muted);transition:color .2s}.modal-close:hover{color:var(--navy)}
+        .modal h2{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:700;margin-bottom:6px}.modal .modal-sub{font-size:.92rem;color:var(--text-body);margin-bottom:24px;line-height:1.6}
+        .modal-form{display:flex;flex-direction:column;gap:12px}
+        .modal-form input{padding:14px 18px;border:2px solid var(--border);border-radius:var(--radius-sm);font-size:.95rem;font-family:inherit;outline:none;transition:border-color .2s;background:var(--bg)}.modal-form input:focus{border-color:var(--amber)}
+        .modal-form button{padding:16px;background:var(--amber);color:var(--navy-deep);border:none;border-radius:100px;font-weight:700;font-size:1rem;cursor:pointer;transition:all .25s;font-family:inherit}.modal-form button:hover{background:#C48A09;transform:translateY(-1px)}
+        .modal-trust{font-size:.78rem;color:var(--text-muted);text-align:center;margin-top:12px}
+
+        /* INLINE LEAD CAPTURE */
+        .lead-bar{padding:48px 0;background:var(--navy-deep);color:#fff;text-align:center}
+        .lead-bar h2{font-family:'Fraunces',serif;font-size:clamp(1.3rem,3vw,1.8rem);font-weight:700;margin-bottom:6px}.lead-bar p{font-size:.92rem;color:rgba(255,255,255,.6);margin-bottom:24px}
+        .lead-inline{display:flex;gap:10px;max-width:480px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+        .lead-inline input{flex:1;min-width:180px;padding:14px 18px;border:2px solid rgba(255,255,255,.15);border-radius:100px;font-size:.92rem;font-family:inherit;outline:none;background:rgba(255,255,255,.08);color:#fff;transition:border-color .2s}.lead-inline input::placeholder{color:rgba(255,255,255,.4)}.lead-inline input:focus{border-color:var(--amber)}
+        .lead-inline button{padding:14px 28px;background:var(--amber);color:var(--navy-deep);border:none;border-radius:100px;font-weight:700;font-size:.92rem;cursor:pointer;transition:all .25s;font-family:inherit;white-space:nowrap}.lead-inline button:hover{background:var(--amber-light);transform:translateY(-1px)}
+        .lead-bar .lead-trust{font-size:.75rem;color:rgba(255,255,255,.35);margin-top:14px}
+
         @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}.reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
 
         @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px}.module-grid,.test-grid,.pricing-grid{grid-template-columns:1fr;max-width:480px;margin-left:auto;margin-right:auto}.why-grid{grid-template-columns:1fr}.founder-inner{grid-template-columns:1fr;text-align:center;justify-items:center}}
@@ -91,7 +109,7 @@
         <li><a href="#testimonials">Reviews</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="https://www.youtube.com/@BreakintoCR" target="_blank" style="display:inline-flex;align-items:center;gap:6px;"><svg width="18" height="13" viewBox="0 0 24 17" fill="currentColor"><path d="M23.498 2.186A3.016 3.016 0 0 0 21.38.068C19.505-.39 12-.39 12-.39s-7.505 0-9.38.458A3.016 3.016 0 0 0 .502 2.186C.045 4.062.045 8.012.045 8.012s0 3.95.457 5.827a3.016 3.016 0 0 0 2.118 2.117c1.875.458 9.38.458 9.38.458s7.505 0 9.38-.458a3.016 3.016 0 0 0 2.118-2.117c.457-1.877.457-5.827.457-5.827s0-3.95-.457-5.826zM9.545 11.443V4.58l6.273 3.432-6.273 3.43z"/></svg> YouTube</a></li>
-        <li><a href="https://break-into-clinical-research.base44.app" class="nav-btn">Enroll Now</a></li>
+        <li><a href="#" class="nav-btn" onclick="openModal(event)">Watch Free Module</a></li>
     </ul>
     <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">☰</button>
 </div></nav>
@@ -103,8 +121,8 @@
         <p class="hero-pain">The problem isn't your qualifications — it's that <strong>no one taught you how to translate them for the U.S. clinical research industry.</strong> This course does exactly that.</p>
         <p class="hero-sub">The IMG Clinical Research Blueprint — the step-by-step system for foreign-trained physicians to land CRC, CRA, and clinical research roles in the U.S.</p>
         <div class="hero-ctas">
-            <a href="https://break-into-clinical-research.base44.app" class="btn-primary">Get The Blueprint — $197</a>
-            <a href="#modules" class="btn-ghost">See Curriculum ↓</a>
+            <a href="#" class="btn-primary" onclick="openModal(event)">▶ Watch Free Module</a>
+            <a href="#pricing" class="btn-ghost">See Pricing ↓</a>
         </div>
     </div>
     <div class="hero-visual">
@@ -116,6 +134,20 @@
         </div>
     </div>
 </div></div></section>
+
+<section class="lead-bar">
+    <div class="container">
+        <h2>🎬 Watch Module 1 Free — No Credit Card Required</h2>
+        <p>Enter your email to unlock the first module and see if the Blueprint is right for you.</p>
+        <form class="lead-inline" action="https://assets.mailerlite.com/jsonp/2167337/forms/181211328872973487/subscribe" method="post" target="_blank">
+            <input type="email" name="fields[email]" placeholder="Your email address" required>
+            <input type="hidden" name="ml-submit" value="1">
+            <input type="hidden" name="anticsrf" value="true">
+            <button type="submit">Watch Free Module →</button>
+        </form>
+        <div class="lead-trust">🔒 No spam. Unsubscribe anytime. Your email stays private.</div>
+    </div>
+</section>
 
 <section class="founder" id="instructor"><div class="container"><div class="founder-inner reveal">
     <div class="founder-photo">👨‍⚕️</div>
@@ -224,7 +256,7 @@
     <div class="section-badge">🌍 The Only Course Built for IMGs</div>
     <h2>Your medical degree is not a liability. <em>It's your biggest advantage.</em></h2>
     <p>Stop applying with a generic resume and hoping for the best. Get the exact system foreign-trained physicians use to break into U.S. clinical research.</p>
-    <a href="https://break-into-clinical-research.base44.app" class="btn-primary">Get The Blueprint — $197 →</a>
+    <a href="#" class="btn-primary" onclick="openModal(event)">▶ Watch Free Module — It's Free →</a>
 </div></section>
 
 <footer class="footer"><div class="container"><div class="footer-inner">
@@ -238,12 +270,98 @@
     </ul>
 </div></div></footer>
 
+<!-- EMAIL CAPTURE MODAL (MailerLite) -->
+<div class="modal-overlay" id="emailModal">
+    <div class="modal">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <div id="mlb2-38099651" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-38099651">
+          <div class="ml-form-align-center">
+            <div class="ml-form-embedWrapper embedForm">
+              <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                <div class="ml-form-embedContent" style="">
+                  <h4>🎬 Watch Module 1 Free</h4>
+                  <p>Enter your name and email to unlock the first module of The IMG Clinical Research Blueprint — completely free.</p>
+                </div>
+                <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2167337/forms/181211328872973487/subscribe" data-code="" method="post" target="_blank">
+                  <div class="ml-form-formContent">
+                    <div class="ml-form-fieldRow">
+                      <div class="ml-field-group ml-field-name">
+                        <input aria-label="name" type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Your first name" autocomplete="given-name">
+                      </div>
+                    </div>
+                    <div class="ml-form-fieldRow ml-last-item">
+                      <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                        <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Your email address" autocomplete="email">
+                      </div>
+                    </div>
+                  </div>
+                  <input type="hidden" name="ml-submit" value="1">
+                  <div class="ml-form-embedSubmit">
+                    <button type="submit" class="primary">▶ Watch Free Module Now</button>
+                    <button disabled="disabled" style="display:none" type="button" class="loading">
+                      <div class="ml-form-embedSubmitLoad"></div>
+                      <span class="sr-only">Loading...</span>
+                    </button>
+                  </div>
+                  <input type="hidden" name="anticsrf" value="true">
+                </form>
+              </div>
+              <div class="ml-form-successBody row-success" style="display:none">
+                <div class="ml-form-successContent">
+                  <h4>You're in! 🎉</h4>
+                  <p>Redirecting you to your free module now...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-trust">🔒 No spam. No credit card. Unsubscribe anytime.</div>
+    </div>
+</div>
+
+<!-- MailerLite brand override styles -->
+<style>
+/* Override MailerLite defaults to match BreakIntoCR brand */
+#mlb2-38099651.ml-form-embedContainer .ml-form-embedWrapper{background:transparent!important;border:none!important;padding:0!important}
+#mlb2-38099651.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody{padding:0!important}
+#mlb2-38099651 .ml-form-embedContent{margin-bottom:20px!important}
+#mlb2-38099651 .ml-form-embedContent h4{font-family:'Fraunces',serif!important;font-size:1.5rem!important;font-weight:700!important;color:#1B2A4A!important;margin-bottom:8px!important}
+#mlb2-38099651 .ml-form-embedContent p{font-family:'Outfit',sans-serif!important;font-size:.92rem!important;color:#4A5568!important;line-height:1.6!important}
+#mlb2-38099651 .ml-form-fieldRow input{font-family:'Outfit',sans-serif!important;font-size:.95rem!important;padding:14px 18px!important;border:2px solid rgba(27,42,74,.08)!important;border-radius:10px!important;background:#FDFAF5!important;color:#1B2A4A!important;transition:border-color .2s!important}
+#mlb2-38099651 .ml-form-fieldRow input:focus{border-color:#D4940A!important;outline:none!important}
+#mlb2-38099651 .ml-form-fieldRow input::placeholder{color:#8896A6!important}
+#mlb2-38099651 .ml-form-embedSubmit{margin-top:4px!important}
+#mlb2-38099651 .ml-form-embedSubmit button.primary{font-family:'Outfit',sans-serif!important;font-size:1rem!important;font-weight:700!important;padding:16px!important;background:#D4940A!important;color:#0F1A30!important;border:none!important;border-radius:100px!important;cursor:pointer;transition:all .25s!important}
+#mlb2-38099651 .ml-form-embedSubmit button.primary:hover{background:#C48A09!important;transform:translateY(-1px);box-shadow:0 8px 24px rgba(212,148,10,.25)}
+#mlb2-38099651 .ml-form-successContent h4{font-family:'Fraunces',serif!important;font-size:1.4rem!important;font-weight:700!important;color:#1B2A4A!important}
+#mlb2-38099651 .ml-form-successContent p{font-family:'Outfit',sans-serif!important;font-size:.95rem!important;color:#4A5568!important}
+#mlb2-38099651 .ml-form-formContent{margin-bottom:12px!important}
+#mlb2-38099651 .ml-form-fieldRow{margin-bottom:12px!important}
+</style>
+
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v95037e5bac78f29ed026832ca21a7c7b" type="text/javascript"></script>
+<script>
+function ml_webform_success_38099651(){
+    var $=ml_jQuery||jQuery;
+    $('.ml-subscribe-form-38099651 .row-success').show();
+    $('.ml-subscribe-form-38099651 .row-form').hide();
+    // Redirect to Base44 after 2 seconds
+    setTimeout(function(){window.location.href='https://break-into-clinical-research.base44.app'},2000);
+}
+</script>
+
 <script>
 const navbar=document.getElementById('navbar');window.addEventListener('scroll',()=>navbar.classList.toggle('scrolled',window.scrollY>40));
 const toggle=document.getElementById('mobileToggle'),links=document.getElementById('navLinks');toggle.addEventListener('click',()=>{links.classList.toggle('open');toggle.textContent=links.classList.contains('open')?'✕':'☰'});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.textContent='☰'}));
 document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',()=>{const item=btn.parentElement,ans=item.querySelector('.faq-a'),open=item.classList.contains('active');document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('active');i.querySelector('.faq-a').style.maxHeight=null});if(!open){item.classList.add('active');ans.style.maxHeight=ans.scrollHeight+'px'}})});
 const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){const id=this.getAttribute('href');if(id==='#')return;e.preventDefault();const el=document.querySelector(id);if(el)window.scrollTo({top:el.getBoundingClientRect().top+window.pageYOffset-80,behavior:'smooth'})})});
+
+/* EMAIL MODAL */
+function openModal(e){if(e)e.preventDefault();document.getElementById('emailModal').classList.add('open');document.body.style.overflow='hidden'}
+function closeModal(){document.getElementById('emailModal').classList.remove('open');document.body.style.overflow=''}
+document.getElementById('emailModal').addEventListener('click',function(e){if(e.target===this)closeModal()});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});
 </script>
 </body>
 </html>
