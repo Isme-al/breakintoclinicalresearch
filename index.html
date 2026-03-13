@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The IMG Clinical Research Blueprint — How Foreign-Trained Physicians Break Into U.S. Clinical Research</title>
-    <meta name="description" content="The only clinical research career course built by an IMG, for IMGs. Learn how to translate your medical degree into a high-paying U.S. clinical research career.">
+    <title>The Clinical Research Blueprint — Break Into U.S. Clinical Research Without Experience</title>
+    <meta name="description" content="The step-by-step system for healthcare professionals, science graduates, and career changers to land their first clinical research role in the U.S.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -34,6 +34,11 @@
         .hero-visual{animation:fadeUp .6s ease .2s both}.hero-video-wrap{position:relative;width:100%;padding-bottom:62.5%;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg)}.hero-video-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%}
         .hero-badge-row{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}.hero-badge{padding:6px 14px;background:var(--bg-card);border:1px solid var(--border);border-radius:100px;font-size:.78rem;font-weight:600;color:var(--text-body)}
 
+        /* WHO THIS IS FOR */
+        .who-for{padding:60px 0;background:var(--bg-warm)}.who-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;max-width:900px;margin:0 auto}
+        .who-card{padding:22px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);text-align:center;transition:all .25s}.who-card:hover{border-color:rgba(212,148,10,.2);box-shadow:var(--shadow-sm)}
+        .who-card .who-emoji{font-size:1.8rem;margin-bottom:10px}.who-card h3{font-size:.88rem;font-weight:700;margin-bottom:4px}.who-card p{font-size:.78rem;color:var(--text-body);line-height:1.5}
+
         /* LEAD BAR */
         .lead-bar{padding:48px 0;background:var(--navy-deep);color:#fff;text-align:center}
         .lead-bar h2{font-family:'Fraunces',serif;font-size:clamp(1.3rem,3vw,1.8rem);font-weight:700;margin-bottom:6px}.lead-bar p{font-size:.92rem;color:rgba(255,255,255,.6);margin-bottom:24px}
@@ -50,10 +55,10 @@
         .module-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:30px 24px;transition:all .3s}.module-card:hover{transform:translateY(-4px);border-color:rgba(212,148,10,.2);box-shadow:var(--shadow-md)}
         .module-num{font-family:'Fraunces',serif;font-size:1.8rem;font-weight:800;color:var(--amber);opacity:.6;margin-bottom:10px}.module-card h3{font-size:1rem;font-weight:700;margin-bottom:8px}.module-card p{font-size:.88rem;color:var(--text-body);line-height:1.65}
 
-        /* WHY IMGs */
-        .why-imgs{padding:90px 0;background:var(--bg-warm)}.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:800px;margin:0 auto}
-        .why-item{display:flex;gap:14px;padding:22px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);transition:all .25s}.why-item:hover{border-color:rgba(212,148,10,.2);box-shadow:var(--shadow-sm)}
-        .why-icon{width:44px;height:44px;border-radius:12px;background:var(--amber-glow);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}.why-item h3{font-size:.95rem;font-weight:700;margin-bottom:4px}.why-item p{font-size:.85rem;color:var(--text-body);line-height:1.6}
+        /* YOUR EDGE */
+        .your-edge{padding:90px 0;background:var(--bg-warm)}.edge-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:800px;margin:0 auto}
+        .edge-item{display:flex;gap:14px;padding:22px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-sm);transition:all .25s}.edge-item:hover{border-color:rgba(212,148,10,.2);box-shadow:var(--shadow-sm)}
+        .edge-icon{width:44px;height:44px;border-radius:12px;background:var(--amber-glow);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}.edge-item h3{font-size:.95rem;font-weight:700;margin-bottom:4px}.edge-item p{font-size:.85rem;color:var(--text-body);line-height:1.6}
 
         /* PRICING */
         .pricing{padding:90px 0}.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
@@ -63,14 +68,13 @@
         .price-features{list-style:none;text-align:left;margin-bottom:26px}.price-features li{font-size:.84rem;color:var(--text-body);padding:6px 0;display:flex;align-items:flex-start;gap:8px}.price-features li::before{content:'✓';color:var(--success);font-weight:700;flex-shrink:0}
         .price-btn{display:block;width:100%;padding:14px;border:2px solid var(--border-hover);border-radius:100px;background:0 0;color:var(--navy);font-weight:700;font-size:.9rem;cursor:pointer;text-decoration:none;text-align:center;transition:all .25s}.price-btn:hover{border-color:var(--amber);color:var(--amber)}.price-btn.primary{background:var(--amber);border-color:var(--amber);color:var(--navy-deep)}.price-btn.primary:hover{background:#C48A09;border-color:#C48A09;transform:translateY(-2px);box-shadow:0 8px 24px rgba(212,148,10,.25)}
 
-        /* SOCIAL PROOF (replaces testimonials) */
+        /* SOCIAL PROOF */
         .social-proof{padding:90px 0;background:var(--bg-warm)}
         .proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:900px;margin:0 auto}
         .proof-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:32px 24px;text-align:center;transition:all .3s}.proof-card:hover{transform:translateY(-4px);border-color:rgba(212,148,10,.2)}
         .proof-icon{font-size:2.2rem;margin-bottom:14px}
         .proof-stat{font-family:'Fraunces',serif;font-size:1.8rem;font-weight:800;color:var(--navy);margin-bottom:6px}
         .proof-label{font-size:.88rem;color:var(--text-body);line-height:1.5}
-
 
         /* FAQ */
         .faq{padding:90px 0}.faq-list{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
@@ -92,7 +96,7 @@
         .modal-close{position:absolute;top:16px;right:18px;background:none;border:none;font-size:1.3rem;cursor:pointer;color:var(--text-muted);transition:color .2s}.modal-close:hover{color:var(--navy)}
         .modal-trust{font-size:.78rem;color:var(--text-muted);text-align:center;margin-top:16px}
 
-        /* MailerLite brand overrides */
+        /* MailerLite brand overrides — MODAL (light bg) */
         #mlb2-38099651.ml-form-embedContainer .ml-form-embedWrapper{background:transparent!important;border:none!important;padding:0!important}
         #mlb2-38099651 .ml-form-embedBody{padding:0!important}
         #mlb2-38099651 .ml-form-embedContent{margin-bottom:20px!important}
@@ -108,13 +112,50 @@
         #mlb2-38099651 .ml-form-successContent h4{font-family:'Fraunces',serif!important;font-size:1.4rem!important;font-weight:700!important;color:#1B2A4A!important}
         #mlb2-38099651 .ml-form-successContent p{font-family:'Outfit',sans-serif!important;font-size:.95rem!important;color:#4A5568!important}
 
+        /* MailerLite overrides — INLINE LEAD BAR (dark bg) */
+        .lead-bar .ml-form-embedContainer .ml-form-embedWrapper{background:transparent!important;border:none!important;padding:0!important}
+        .lead-bar .ml-form-embedBody{padding:0!important}
+        .lead-bar .ml-form-embedContent{margin-bottom:16px!important;display:none!important}
+        .lead-bar .ml-form-fieldRow{margin-bottom:10px!important}
+        .lead-bar .ml-form-fieldRow input{font-family:'Outfit',sans-serif!important;font-size:.95rem!important;padding:14px 18px!important;border:2px solid rgba(255,255,255,.15)!important;border-radius:10px!important;background:rgba(255,255,255,.08)!important;color:#fff!important;transition:border-color .2s!important}
+        .lead-bar .ml-form-fieldRow input:focus{border-color:#D4940A!important;outline:none!important}
+        .lead-bar .ml-form-fieldRow input::placeholder{color:rgba(255,255,255,.45)!important}
+        .lead-bar .ml-form-embedSubmit{margin-top:8px!important}
+        .lead-bar .ml-form-embedSubmit button.primary{font-family:'Outfit',sans-serif!important;font-size:1rem!important;font-weight:700!important;padding:16px!important;background:#D4940A!important;color:#0F1A30!important;border:none!important;border-radius:100px!important;cursor:pointer;transition:all .25s!important}
+        .lead-bar .ml-form-embedSubmit button.primary:hover{background:#C48A09!important;transform:translateY(-1px);box-shadow:0 8px 24px rgba(212,148,10,.25)}
+        .lead-bar .ml-form-successContent h4{font-family:'Fraunces',serif!important;font-size:1.4rem!important;font-weight:700!important;color:#F5C842!important}
+        .lead-bar .ml-form-successContent p{font-family:'Outfit',sans-serif!important;font-size:.95rem!important;color:rgba(255,255,255,.6)!important}
+
         /* ANIMATIONS */
         @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}.reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
 
         /* RESPONSIVE */
-        @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px}.module-grid,.pricing-grid{grid-template-columns:1fr;max-width:480px;margin-left:auto;margin-right:auto}.proof-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr}.founder-inner{grid-template-columns:1fr;text-align:center;justify-items:center}}
+        @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:40px}.module-grid,.pricing-grid{grid-template-columns:1fr;max-width:480px;margin-left:auto;margin-right:auto}.proof-grid{grid-template-columns:1fr}.edge-grid{grid-template-columns:1fr}.who-grid{grid-template-columns:repeat(2,1fr)}.founder-inner{grid-template-columns:1fr;text-align:center;justify-items:center}}
         @media(max-width:768px){.nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:rgba(253,250,245,.98);backdrop-filter:blur(16px);padding:24px;gap:16px;border-bottom:1px solid var(--border)}.nav-links.open{display:flex}.mobile-toggle{display:block}.hero{padding:130px 0 60px}.footer-inner{flex-direction:column;text-align:center}}
-        @media(max-width:480px){.hero-ctas{flex-direction:column}.hero-badge-row{justify-content:center}.founder-cred{justify-content:center}.modal{padding:32px 24px}}
+        @media(max-width:480px){.hero-ctas{flex-direction:column}.hero-badge-row{justify-content:center}.founder-cred{justify-content:center}.modal{padding:32px 24px}.who-grid{grid-template-columns:1fr}}
+        /* MailerLite structural */
+        .ml-form-embedSubmitLoad{display:inline-block;width:20px;height:20px}
+        .ml-form-embedSubmitLoad:after{content:" ";display:block;width:11px;height:11px;margin:1px;border-radius:50%;border:4px solid #fff;border-color:#fff #fff #fff transparent;animation:ml-form-embedSubmitLoad 1.2s linear infinite}
+        @keyframes ml-form-embedSubmitLoad{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+        .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+        .ml-form-embedContainer{box-sizing:border-box;display:table;margin:0 auto;position:static;width:100%!important}
+        .ml-form-embedContainer h4,.ml-form-embedContainer p,.ml-form-embedContainer span,.ml-form-embedContainer button{text-transform:none!important;letter-spacing:normal!important}
+        .ml-form-embedWrapper{display:inline-block!important;margin:0;padding:0;position:relative}
+        .ml-form-embedWrapper.embedForm{max-width:400px;width:100%}
+        .ml-form-align-center{text-align:center}
+        .ml-form-embedBody,.ml-form-successBody{padding:20px 20px 0 20px}
+        .ml-form-embedContent{text-align:left;margin:0 0 20px 0}
+        .ml-form-embedContent h4{font-size:30px;font-weight:400;margin:0 0 10px 0;word-break:break-word}
+        .ml-form-embedContent p{font-size:14px;font-weight:400;line-height:20px;margin:0 0 10px 0}
+        .ml-block-form{margin:0;width:100%}
+        .ml-form-formContent{margin:0 0 20px 0;width:100%}
+        .ml-form-fieldRow{margin:0 0 10px 0;width:100%}
+        .ml-form-fieldRow.ml-last-item{margin:0}
+        .ml-form-fieldRow input{background-color:#fff!important;color:#333!important;border-color:#ccc;border-radius:4px!important;border-style:solid!important;border-width:1px!important;font-size:14px!important;height:auto;line-height:21px!important;margin:0;padding:10px!important;width:100%!important;box-sizing:border-box!important;max-width:100%!important}
+        .ml-form-embedSubmit{margin:0 0 20px 0;float:left;width:100%}
+        .ml-form-embedSubmit button{border:none!important;cursor:pointer;font-size:14px!important;font-weight:700!important;line-height:21px!important;height:auto;padding:10px!important;width:100%!important;box-sizing:border-box!important}
+        .ml-form-embedSubmit button.loading{display:none}
+        .ml-error input{border-color:red!important}
     </style>
 </head>
 <body>
@@ -135,10 +176,10 @@
 <!-- HERO -->
 <section class="hero"><div class="container"><div class="hero-grid">
     <div>
-        <div class="hero-eyebrow">🌍 Built by an IMG, for IMGs</div>
-        <h1>You have a medical degree. You understand clinical trials. <em>But your resume keeps getting ignored.</em></h1>
-        <p class="hero-pain">The problem isn't your qualifications — it's that <strong>no one taught you how to translate them for the U.S. clinical research industry.</strong> This course does exactly that.</p>
-        <p class="hero-sub">The IMG Clinical Research Blueprint — the step-by-step system for foreign-trained physicians to land CRC, CRA, and clinical research roles in the U.S.</p>
+        <div class="hero-eyebrow">🔬 For Healthcare Pros, Science Grads & Career Changers</div>
+        <h1>You have the science background. You want clinical research. <em>But no one's showing you how to get in.</em></h1>
+        <p class="hero-pain">The problem isn't your qualifications — it's that <strong>no one taught you how to translate your background into the language clinical research employers actually want to hear.</strong> This course fixes that.</p>
+        <p class="hero-sub">The Clinical Research Blueprint — the step-by-step system for landing clinical research roles in the U.S., even with zero industry experience.</p>
         <div class="hero-ctas">
             <a href="#" class="btn-primary" onclick="openModal(event)">▶ Watch Free Module</a>
             <a href="#pricing" class="btn-ghost">See Pricing ↓</a>
@@ -148,19 +189,89 @@
         <div class="hero-video-wrap"><iframe src="https://www.youtube.com/embed/ZNHVYu1sxy8?si=4hre0kSKOm87pW_f" title="Course Preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
         <div class="hero-badge-row">
             <span class="hero-badge">🎓 10 Video Lessons</span>
-            <span class="hero-badge">📄 CV Translation Templates</span>
-            <span class="hero-badge">🇺🇸 U.S. Industry Focus</span>
+            <span class="hero-badge">📄 Resume & CV Templates</span>
+            <span class="hero-badge">U.S. Industry Focus</span>
         </div>
     </div>
 </div></div></section>
+
+<!-- WHO THIS IS FOR -->
+<section class="who-for"><div class="container">
+    <div class="header reveal" style="text-align:center;margin-bottom:32px">
+        <div class="section-badge">🎯 Who This Is For</div>
+        <h2 class="section-title">This course works for your background</h2>
+    </div>
+    <div class="who-grid">
+        <div class="who-card reveal">
+            <div class="who-emoji">🌍</div>
+            <h3>International Medical Graduates</h3>
+            <p>Translate your medical degree into a U.S. clinical research career — no USMLE required.</p>
+        </div>
+        <div class="who-card reveal">
+            <div class="who-emoji">🧬</div>
+            <h3>Science Degree Holders</h3>
+            <p>Biology, chemistry, nursing, pharmacy — your science background is your way in.</p>
+        </div>
+        <div class="who-card reveal">
+            <div class="who-emoji">🎓</div>
+            <h3>New Graduates</h3>
+            <p>Just finished your degree and want a clear path into clinical trials? Start here.</p>
+        </div>
+        <div class="who-card reveal">
+            <div class="who-emoji">🔄</div>
+            <h3>Career Changers</h3>
+            <p>Coming from healthcare, pharma, or research and ready to pivot into clinical trials.</p>
+        </div>
+    </div>
+</div></section>
 
 <!-- LEAD CAPTURE BAR -->
 <section class="lead-bar" id="free-module">
     <div class="container">
         <h2>🎬 Watch the First Lesson Free — No Credit Card Required</h2>
         <p>Enter your name and email to unlock the first lesson and see if the Blueprint is right for you.</p>
-        <div style="margin-top:24px;">
-            <a href="#" class="btn-primary" onclick="openModal(event)" style="background:var(--amber);color:var(--navy-deep);font-size:1.05rem;padding:18px 40px;">▶ Get Free Access Now</a>
+        <div style="max-width:400px;margin:24px auto 0;">
+            <div class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-38099651">
+                <div class="ml-form-align-center">
+                    <div class="ml-form-embedWrapper embedForm">
+                        <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                            <div class="ml-form-embedContent" style="">
+                                <h4>🎬 Watch Module 1 Free</h4>
+                                <p>Enter your name and email to unlock the first module — completely free.</p>
+                            </div>
+                            <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2167337/forms/181211328872973487/subscribe" data-code="" method="post" target="_blank">
+                                <div class="ml-form-formContent">
+                                    <div class="ml-form-fieldRow">
+                                        <div class="ml-field-group ml-field-name">
+                                            <input aria-label="name" type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Name" autocomplete="given-name">
+                                        </div>
+                                    </div>
+                                    <div class="ml-form-fieldRow ml-last-item">
+                                        <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                                            <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="ml-submit" value="1">
+                                <div class="ml-form-embedSubmit">
+                                    <button type="submit" class="primary">▶ Get Free Access Now</button>
+                                    <button disabled="disabled" style="display:none" type="button" class="loading">
+                                        <div class="ml-form-embedSubmitLoad"></div>
+                                        <span class="sr-only">Loading...</span>
+                                    </button>
+                                </div>
+                                <input type="hidden" name="anticsrf" value="true">
+                            </form>
+                        </div>
+                        <div class="ml-form-successBody row-success" style="display:none">
+                            <div class="ml-form-successContent">
+                                <h4>You're in! 🎉</h4>
+                                <p>Redirecting you to your free lesson now...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="lead-trust">🔒 No spam. No credit card. Unsubscribe anytime.</div>
     </div>
@@ -171,14 +282,14 @@
     <div class="founder-photo">👨‍⚕️</div>
     <div class="founder-content">
         <div class="section-badge">👋 Meet Your Instructor</div>
-        <h2>Built by someone who made this exact move</h2>
-        <div class="founder-title">Foreign-Trained Physician · U.S. Clinical Research Professional</div>
-        <p>I'm an international medical graduate who came to the U.S. and had to figure out this entire pathway from scratch — the visa complexities, the credential translation, the industry language that no one teaches you in medical school.</p>
-        <p>I built this course because when I was in your position, <strong>nothing like it existed.</strong> Every resource was generic. None of them understood the specific situation IMGs face. This is the resource I wish I had.</p>
+        <h2>Built by someone who made this exact career move</h2>
+        <div class="founder-title">International Medical Graduate · U.S. Clinical Research Professional · ACRP-CP Certified</div>
+        <p>I'm an international medical graduate who came to the U.S. and had to figure out this entire pathway from scratch — the credential translation, the industry language, and the job search strategies that no one teaches you in school.</p>
+        <p>I built this course because when I was in your position, <strong>nothing like it existed.</strong> Every resource was either too generic or assumed you already had U.S. experience. Whether you're an IMG, a science graduate, or someone pivoting from another healthcare role — this is the roadmap I wish I had.</p>
         <div class="founder-cred">
-            <div class="founder-cred-item"><span>✓</span> IMG Physician</div>
-            <div class="founder-cred-item"><span>✓</span> Clinical Research Experience</div>
-            <div class="founder-cred-item"><span>✓</span> GCP Certified</div>
+            <div class="founder-cred-item"><span>✓</span> MBBS Physician</div>
+            <div class="founder-cred-item"><span>✓</span> ACRP-CP Certified</div>
+            <div class="founder-cred-item"><span>✓</span> U.S. Clinical Research Experience</div>
         </div>
     </div>
 </div></div></section>
@@ -188,37 +299,37 @@
     <div class="header reveal">
         <div class="section-badge">📚 The Blueprint</div>
         <h2 class="section-title">What's inside the course</h2>
-        <p class="section-sub">Every lesson is designed for IMGs — we skip the basics you already know and focus on the positioning, strategy, and U.S. industry knowledge you don't.</p>
+        <p class="section-sub">Every lesson is designed for people breaking into clinical research — we focus on the positioning, strategy, and U.S. industry knowledge that gets you hired.</p>
     </div>
     <div class="module-grid">
-        <div class="module-card reveal"><div class="module-num">01</div><h3>The Job Search is Rigged — Here's How to Win</h3><p>Why the traditional application process fails IMGs, and the alternative strategy that actually gets you noticed by hiring managers.</p></div>
-        <div class="module-card reveal"><div class="module-num">02</div><h3>How to Get Instant Credibility With GCP</h3><p>You already understand GCP from medical school. This lesson shows you how to formalize and position it as job-ready competency.</p></div>
-        <div class="module-card reveal"><div class="module-num">03</div><h3>The Goldmine Job Search Strategy</h3><p>Where the real clinical research openings are, which job boards actually work, and how to find roles that value your medical background.</p></div>
-        <div class="module-card reveal"><div class="module-num">04</div><h3>Breaking In With Zero U.S. Experience</h3><p>The specific strategy for getting your first role when you have no American work history — using your clinical training as leverage.</p></div>
-        <div class="module-card reveal"><div class="module-num">05</div><h3>The Perfect Cold Email Formula</h3><p>The exact email templates and outreach scripts that get responses from hiring managers — tested and refined by IMGs who've used them.</p></div>
+        <div class="module-card reveal"><div class="module-num">01</div><h3>The Job Search is Rigged — Here's How to Win</h3><p>Why the traditional application process fails newcomers to clinical research, and the alternative strategy that actually gets you noticed by hiring managers.</p></div>
+        <div class="module-card reveal"><div class="module-num">02</div><h3>How to Get Instant Credibility With GCP</h3><p>Good Clinical Practice certification is your entry ticket. This lesson shows you how to get certified fast and position it as job-ready competency.</p></div>
+        <div class="module-card reveal"><div class="module-num">03</div><h3>The Goldmine Job Search Strategy</h3><p>Where the real clinical research openings are, which job boards actually work, and how to find roles that value your background.</p></div>
+        <div class="module-card reveal"><div class="module-num">04</div><h3>Breaking In With Zero Industry Experience</h3><p>The specific strategy for getting your first role when you have no clinical research work history — using your existing skills as leverage.</p></div>
+        <div class="module-card reveal"><div class="module-num">05</div><h3>The Perfect Cold Email Formula</h3><p>The exact email templates and outreach scripts that get responses from hiring managers and Principal Investigators — tested and refined.</p></div>
         <div class="module-card reveal"><div class="module-num">06</div><h3>How to Follow Up & Follow Through</h3><p>The follow-up cadence that turns silence into interviews. When to push, when to pivot, and how to stay top of mind.</p></div>
-        <div class="module-card reveal"><div class="module-num">07</div><h3>Cold Outreach to Job Offer Playbook</h3><p>The end-to-end system from first contact to signed offer — covering negotiation, visa questions, and closing the deal.</p></div>
-        <div class="module-card reveal"><div class="module-num">08</div><h3>Certifications Worth Getting (And Which to Skip)</h3><p>ACRP vs. SOCRA, timing your certification, and a study plan that leverages your medical knowledge to pass faster.</p></div>
+        <div class="module-card reveal"><div class="module-num">07</div><h3>Cold Outreach to Job Offer Playbook</h3><p>The end-to-end system from first contact to signed offer — covering negotiation, salary expectations, and closing the deal.</p></div>
+        <div class="module-card reveal"><div class="module-num">08</div><h3>Certifications Worth Getting (And Which to Skip)</h3><p>ACRP vs. SOCRA, timing your certification, and a study plan that helps you pass faster using knowledge you already have.</p></div>
         <div class="module-card reveal"><div class="module-num">09</div><h3>Networking in Clinical Research</h3><p>How to build genuine connections in the industry — LinkedIn strategy, conferences, and the networking moves that lead to referrals.</p></div>
         <div class="module-card reveal"><div class="module-num">10</div><h3>Your First 90 Days on the Job</h3><p>How to ramp up fast, what's expected of you, and how to set yourself up for promotion from day one.</p></div>
-        <div class="module-card reveal"><div class="module-num">+</div><h3>IMG Bonus Kit</h3><p>CV templates, cover letter frameworks, cold outreach scripts, GCP cheat sheets, interview question bank, and a networking tracker.</p></div>
+        <div class="module-card reveal"><div class="module-num">+</div><h3>Career Starter Bonus Kit</h3><p>Resume templates, cover letter frameworks, cold outreach scripts, GCP cheat sheets, interview question bank, and a networking tracker.</p></div>
     </div>
 </div></section>
 
-<!-- WHY IMGs -->
-<section class="why-imgs" id="why"><div class="container">
+<!-- YOUR EDGE -->
+<section class="your-edge" id="why"><div class="container">
     <div class="header reveal" style="text-align:center">
-        <div class="section-badge">💡 The IMG Advantage</div>
+        <div class="section-badge">💡 Your Hidden Edge</div>
         <h2 class="section-title">You're more qualified than you think</h2>
-        <p class="section-sub" style="margin:0 auto">Most IMGs don't realize they already have 80% of what CROs want. This course teaches you the other 20%: positioning.</p>
+        <p class="section-sub" style="margin:0 auto">Most people don't realize they already have skills CROs are desperate for. This course teaches you how to position what you've got.</p>
     </div>
-    <div class="why-grid">
-        <div class="why-item reveal"><div class="why-icon">🧬</div><div><h3>Clinical Knowledge</h3><p>You understand disease states, pharmacology, and patient safety at a level most CRCs spend years learning.</p></div></div>
-        <div class="why-item reveal"><div class="why-icon">📋</div><div><h3>GCP Familiarity</h3><p>Medical school gave you the foundation of Good Clinical Practice. You just need the U.S. regulatory framing.</p></div></div>
-        <div class="why-item reveal"><div class="why-icon">🗣️</div><div><h3>Patient Communication</h3><p>Informed consent, adverse event recognition, patient rapport — you've done this in clinical rotations.</p></div></div>
-        <div class="why-item reveal"><div class="why-icon">📊</div><div><h3>Research Methodology</h3><p>Study design, endpoints, data integrity — your medical training gives you a head start in clinical trials.</p></div></div>
-        <div class="why-item reveal"><div class="why-icon">🌐</div><div><h3>Multilingual Capability</h3><p>Many CROs run global trials. Your language skills and cross-cultural experience are an asset, not a gap.</p></div></div>
-        <div class="why-item reveal"><div class="why-icon">🔥</div><div><h3>High Motivation</h3><p>No one works harder than an IMG building a career in a new country. Hiring managers know this.</p></div></div>
+    <div class="edge-grid">
+        <div class="edge-item reveal"><div class="edge-icon">🧬</div><div><h3>Science & Clinical Knowledge</h3><p>You understand disease states, pharmacology, or patient care at a level most entry-level CRCs spend years learning on the job.</p></div></div>
+        <div class="edge-item reveal"><div class="edge-icon">📋</div><div><h3>Research Methodology</h3><p>Study design, endpoints, data integrity — your academic or clinical training gives you a real head start in clinical trials.</p></div></div>
+        <div class="edge-item reveal"><div class="edge-icon">🗣️</div><div><h3>Patient & People Skills</h3><p>Informed consent, adverse event recognition, patient rapport — if you've worked in any clinical setting, you've practiced this.</p></div></div>
+        <div class="edge-item reveal"><div class="edge-icon">📊</div><div><h3>Attention to Detail</h3><p>Clinical research runs on protocol compliance and data accuracy. Your science training built this muscle already.</p></div></div>
+        <div class="edge-item reveal"><div class="edge-icon">🌐</div><div><h3>Diverse Perspectives</h3><p>Many CROs run global trials. Cross-cultural experience, language skills, and diverse viewpoints are assets, not gaps.</p></div></div>
+        <div class="edge-item reveal"><div class="edge-icon">🔥</div><div><h3>Hunger & Drive</h3><p>No one works harder than someone building a new career path. Hiring managers know this and value it.</p></div></div>
     </div>
 </div></section>
 
@@ -227,59 +338,52 @@
     <div class="header reveal" style="text-align:center">
         <div class="section-badge">💰 Invest in Your Career</div>
         <h2 class="section-title">Simple pricing, lifetime access</h2>
-        <p class="section-sub" style="margin:0 auto">Both options include lifetime access and a 30-day money-back guarantee.</p>
+        <p class="section-sub" style="margin:0 auto">Lifetime access and a 30-day money-back guarantee included.</p>
     </div>
-    <div class="pricing-grid" style="grid-template-columns:repeat(2,1fr);max-width:700px;margin-left:auto;margin-right:auto">
-        <div class="price-card reveal">
-            <h3>The Blueprint</h3><div class="price">$97</div><div class="period">one-time · lifetime access</div>
-            <ul class="price-features"><li>10 video lessons (IMG-focused)</li><li>CV translation templates</li><li>Cover letter frameworks</li><li>Cold outreach scripts</li><li>Interview question bank</li><li>GCP cheat sheets</li><li>Lifetime access + updates</li></ul>
-            <a href="https://break-into-clinical-research.base44.app" class="price-btn">Start Free Trial</a>
-        </div>
+    <div style="max-width:400px;margin:0 auto">
         <div class="price-card featured reveal">
-            <div class="price-popular">Best Value</div>
-            <h3>Blueprint + Qbank Bundle</h3><div class="price" style="color:var(--amber)">$197</div><div class="period">one-time · lifetime access</div>
-            <ul class="price-features"><li>Everything in The Blueprint</li><li>Clinical Research Qbank (800+ Qs)</li><li>ACRP & SOCRA exam prep</li><li>Performance analytics by domain</li><li>Timed mock exams</li><li>Save vs. buying separately</li></ul>
-            <a href="https://break-into-clinical-research.base44.app" class="price-btn primary">Start Free Trial</a>
+            <h3>The Clinical Research Blueprint</h3><div class="price" style="color:var(--amber)">$97</div><div class="period">one-time · lifetime access</div>
+            <ul class="price-features"><li>10 video lessons</li><li>Resume & CV templates</li><li>Cover letter frameworks</li><li>Cold outreach scripts</li><li>Interview question bank</li><li>GCP cheat sheets</li><li>Lifetime access + updates</li><li>30-day money-back guarantee</li></ul>
+            <a href="#free-module" class="price-btn primary">Get Started →</a>
         </div>
-
     </div>
 </div></section>
 
-<!-- SOCIAL PROOF (replaced fake testimonials) -->
+<!-- SOCIAL PROOF -->
 <section class="social-proof" id="testimonials"><div class="container">
     <div class="header reveal" style="text-align:center">
         <div class="section-badge">🚀 Join the First Cohort</div>
-        <h2 class="section-title">Built for the IMG journey</h2>
-        <p class="section-sub" style="margin:0 auto">This course was built from real experience navigating the exact path you're on right now.</p>
+        <h2 class="section-title">Built from real experience</h2>
+        <p class="section-sub" style="margin:0 auto">This course was built from the real experience of breaking into clinical research from the outside — and helping others do the same.</p>
     </div>
     <div class="proof-grid">
         <div class="proof-card reveal">
             <div class="proof-icon">🎓</div>
             <div class="proof-stat">10 Lessons</div>
-            <div class="proof-label">Step-by-step curriculum designed specifically for foreign-trained physicians</div>
+            <div class="proof-label">Step-by-step curriculum designed for people breaking into clinical research</div>
         </div>
         <div class="proof-card reveal">
             <div class="proof-icon">📋</div>
             <div class="proof-stat">5+ Templates</div>
-            <div class="proof-label">CV, cover letter, cold email, and networking templates ready to customize</div>
+            <div class="proof-label">Resume, cover letter, cold email, and networking templates ready to customize</div>
         </div>
         <div class="proof-card reveal">
-            <div class="proof-icon">🌍</div>
-            <div class="proof-stat">100% IMG-Focused</div>
-            <div class="proof-label">Every lesson addresses the specific challenges foreign-trained physicians face</div>
+            <div class="proof-icon">🔬</div>
+            <div class="proof-stat">100% Career-Focused</div>
+            <div class="proof-label">Every lesson addresses the specific challenges of breaking into clinical research without prior experience</div>
         </div>
     </div>
-
 </div></section>
 
 <!-- FAQ -->
 <section class="faq" id="faq"><div class="container">
-    <div class="header reveal"><div class="section-badge">❓ FAQ</div><h2 class="section-title">Questions IMGs ask us</h2></div>
+    <div class="header reveal"><div class="section-badge">❓ FAQ</div><h2 class="section-title">Common questions</h2></div>
     <div class="faq-list">
-        <div class="faq-item reveal"><button class="faq-q">Do I need USMLE/ECFMG to work in clinical research?<span class="faq-toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">No. Clinical research roles (CRC, CRA, Clinical Research Associate) do not require USMLE scores or ECFMG certification. Your medical degree and clinical knowledge are your competitive advantage — this course shows you how to position them.</div></div></div>
-        <div class="faq-item reveal"><button class="faq-q">I'm waiting for match results. Is this relevant?<span class="faq-toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">Absolutely. Many IMGs use clinical research as a bridge during gap years, between match cycles, or as a permanent career pivot. The skills and roles are valuable whether you eventually match or decide to stay in research.</div></div></div>
-        <div class="faq-item reveal"><button class="faq-q">I have no U.S. work experience. Will CROs hire me?<span class="faq-toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">Yes — and that's exactly what this course addresses. Your foreign clinical experience IS relevant; you just need to translate it into U.S. industry language. The CV translation templates and cold outreach scripts are specifically designed for this.</div></div></div>
-        <div class="faq-item reveal"><button class="faq-q">How is this different from generic clinical research courses?<span class="faq-toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">Generic courses teach basics to people with no science background. This course skips what you already know (clinical knowledge, GCP fundamentals) and focuses on U.S. industry positioning, CV translation, and the specific hiring pathway for foreign-trained physicians.</div></div></div>
+        <div class="faq-item reveal"><button class="faq-q">Do I need a medical degree to work in clinical research?<span class="faq-toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">No. Clinical research roles like CRC, CRA, and Clinical Research Associate are open to people with a variety of backgrounds — science degrees, nursing, pharmacy, public health, and even non-science backgrounds with relevant experience. This course shows you how to position whatever background you have.</div></div></div>
+        <div class="faq-item reveal"><button class="faq-q">I'm an IMG. Do I need USMLE/ECFMG for clinical research?<span class="faq-toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">No. Clinical research roles do not require USMLE scores or ECFMG certification. Your medical degree and clinical knowledge are your competitive advantage — this course shows you how to position them for the U.S. market.</div></div></div>
+        <div class="faq-item reveal"><button class="faq-q">I just graduated. Is this too advanced for me?<span class="faq-toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">Not at all — this course is built for people who are new to the industry. If you have a science background and want to break into clinical research, the Blueprint gives you the exact roadmap for getting your first role.</div></div></div>
+        <div class="faq-item reveal"><button class="faq-q">I have no clinical research experience. Will CROs hire me?<span class="faq-toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">Yes — and that's exactly what this course addresses. Your existing experience IS relevant; you just need to translate it into industry language. The resume templates and cold outreach scripts are specifically designed for people with zero clinical research experience.</div></div></div>
+        <div class="faq-item reveal"><button class="faq-q">How is this different from generic clinical research courses?<span class="faq-toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">Most courses teach you clinical research theory. This one teaches you how to actually get hired. We focus on positioning your background, writing resumes that get callbacks, cold emailing hiring managers, and navigating the specific hiring pathway into clinical research.</div></div></div>
         <div class="faq-item reveal"><button class="faq-q">What's the refund policy?<span class="faq-toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">Full 30-day money-back guarantee. If you're not satisfied for any reason, email us for a complete refund — no questions asked.</div></div></div>
         <div class="faq-item reveal"><button class="faq-q">How do I access the course after purchase?<span class="faq-toggle">+</span></button><div class="faq-a"><div class="faq-a-inner">After payment through Stripe, you'll receive an email with your login credentials and instant access to the full course platform. All lessons, templates, and bonus materials are available immediately.</div></div></div>
     </div>
@@ -287,10 +391,10 @@
 
 <!-- FINAL CTA -->
 <section class="final-cta"><div class="container reveal">
-    <div class="section-badge">🌍 The Only Course Built for IMGs</div>
-    <h2>Your medical degree is not a liability. <em>It's your biggest advantage.</em></h2>
-    <p>Stop applying with a generic resume and hoping for the best. Get the exact system foreign-trained physicians use to break into U.S. clinical research.</p>
-    <a href="https://break-into-clinical-research.base44.app" class="btn-primary" style="background:var(--amber-light);color:var(--navy-deep);">Start Your Free Trial →</a>
+    <div class="section-badge">🔬 The Career Course for Clinical Research</div>
+    <h2>Your background is not a limitation. <em>It's your biggest advantage.</em></h2>
+    <p>Stop applying with a generic resume and hoping for the best. Get the exact system people use to break into U.S. clinical research — even without prior experience.</p>
+    <a href="#free-module" class="btn-primary" style="background:var(--amber-light);color:var(--navy-deep);">Get Started →</a>
 </div></section>
 
 <!-- FOOTER -->
@@ -315,7 +419,7 @@
                     <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
                         <div class="ml-form-embedContent">
                             <h4>🎬 Watch the First Lesson Free</h4>
-                            <p>Enter your name and email to unlock the first lesson of The IMG Clinical Research Blueprint — completely free.</p>
+                            <p>Enter your name and email to unlock the first lesson of The Clinical Research Blueprint — completely free.</p>
                         </div>
                         <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2167337/forms/181211328872973487/subscribe" data-code="" method="post">
                             <div class="ml-form-formContent">
@@ -361,7 +465,6 @@ function ml_webform_success_38099651(){
     var $=ml_jQuery||jQuery;
     $('.ml-subscribe-form-38099651 .row-success').show();
     $('.ml-subscribe-form-38099651 .row-form').hide();
-    setTimeout(function(){window.location.href='https://break-into-clinical-research.base44.app'},2000);
 }
 fetch("https://assets.mailerlite.com/jsonp/2167337/forms/181211328872973487/takel");
 </script>
