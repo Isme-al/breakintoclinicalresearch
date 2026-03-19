@@ -112,20 +112,6 @@
         #mlb2-38099651 .ml-form-successContent h4{font-family:'Fraunces',serif!important;font-size:1.4rem!important;font-weight:700!important;color:#1B2A4A!important}
         #mlb2-38099651 .ml-form-successContent p{font-family:'Outfit',sans-serif!important;font-size:.95rem!important;color:#4A5568!important}
 
-        /* MailerLite overrides — INLINE LEAD BAR (dark bg) */
-        .lead-bar .ml-form-embedContainer .ml-form-embedWrapper{background:transparent!important;border:none!important;padding:0!important}
-        .lead-bar .ml-form-embedBody{padding:0!important}
-        .lead-bar .ml-form-embedContent{margin-bottom:16px!important;display:none!important}
-        .lead-bar .ml-form-fieldRow{margin-bottom:10px!important}
-        .lead-bar .ml-form-fieldRow input{font-family:'Outfit',sans-serif!important;font-size:.95rem!important;padding:14px 18px!important;border:2px solid rgba(255,255,255,.15)!important;border-radius:10px!important;background:rgba(255,255,255,.08)!important;color:#fff!important;transition:border-color .2s!important}
-        .lead-bar .ml-form-fieldRow input:focus{border-color:#D4940A!important;outline:none!important}
-        .lead-bar .ml-form-fieldRow input::placeholder{color:rgba(255,255,255,.45)!important}
-        .lead-bar .ml-form-embedSubmit{margin-top:8px!important}
-        .lead-bar .ml-form-embedSubmit button.primary{font-family:'Outfit',sans-serif!important;font-size:1rem!important;font-weight:700!important;padding:16px!important;background:#D4940A!important;color:#0F1A30!important;border:none!important;border-radius:100px!important;cursor:pointer;transition:all .25s!important}
-        .lead-bar .ml-form-embedSubmit button.primary:hover{background:#C48A09!important;transform:translateY(-1px);box-shadow:0 8px 24px rgba(212,148,10,.25)}
-        .lead-bar .ml-form-successContent h4{font-family:'Fraunces',serif!important;font-size:1.4rem!important;font-weight:700!important;color:#F5C842!important}
-        .lead-bar .ml-form-successContent p{font-family:'Outfit',sans-serif!important;font-size:.95rem!important;color:rgba(255,255,255,.6)!important}
-
         /* ANIMATIONS */
         @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}.reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:translateY(0)}
 
@@ -215,47 +201,7 @@
         <h2>🎬 Watch the First Lesson Free — No Credit Card Required</h2>
         <p>Enter your name and email to unlock the first lesson and see if the Blueprint is right for you.</p>
         <div style="max-width:400px;margin:24px auto 0;">
-            <div class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-38099651">
-                <div class="ml-form-align-center">
-                    <div class="ml-form-embedWrapper embedForm">
-                        <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
-                            <div class="ml-form-embedContent" style="">
-                                <h4>🎬 Watch Module 1 Free</h4>
-                                <p>Enter your name and email to unlock the first module — completely free.</p>
-                            </div>
-                            <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2167337/forms/181211328872973487/subscribe" data-code="" method="post">
-                                <div class="ml-form-formContent">
-                                    <div class="ml-form-fieldRow">
-                                        <div class="ml-field-group ml-field-name">
-                                            <input aria-label="name" type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Name" autocomplete="given-name">
-                                        </div>
-                                    </div>
-                                    <div class="ml-form-fieldRow ml-last-item">
-                                        <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                                            <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email">
-                                        </div>
-                                    </div>
-                                </div>
-                                <input type="hidden" name="ml-submit" value="1">
-                                <div class="ml-form-embedSubmit">
-                                    <button type="submit" class="primary">▶ Get Free Access Now</button>
-                                    <button disabled="disabled" style="display:none" type="button" class="loading">
-                                        <div class="ml-form-embedSubmitLoad"></div>
-                                        <span class="sr-only">Loading...</span>
-                                    </button>
-                                </div>
-                                <input type="hidden" name="anticsrf" value="true">
-                            </form>
-                        </div>
-                        <div class="ml-form-successBody row-success" style="display:none">
-                            <div class="ml-form-successContent">
-                                <h4>You're in! 🎉</h4>
-                                <p>Redirecting you to your free lesson now...</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a href="#" class="btn-primary" onclick="openModal(event)" style="width:100%;justify-content:center;font-size:1.1rem;padding:18px 36px;">▶ Get Free Access Now</a>
         </div>
         <div class="lead-trust">🔒 No spam. No credit card. Unsubscribe anytime.</div>
     </div>
